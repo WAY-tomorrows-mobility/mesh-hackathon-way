@@ -1,0 +1,5 @@
+.gitignore
+LICENSE
+README.md
+vcap-local.json
+vcap-local.template.json

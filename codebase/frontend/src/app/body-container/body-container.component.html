@@ -1,0 +1,56 @@
+<div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20px" fxLayout.xs="column">
+  <div fxFlex="25%" fxFlexOffset="20px">
+    <mat-card>
+      <mat-card-title>Admin View</mat-card-title>
+
+      <button mat-raised-button color="warn" (click)="this.mockService.pushOrders()">Add new Random Offer</button>
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Number of Vehicles</mat-label>
+          <input matInput placeholder="Number of vehicles" [(ngModel)]="vehicleCount">
+        </mat-form-field>
+      </p>
+      <button mat-raised-button color="primary" (click)="this.getRoutes()">Calculate Routes</button>
+    </mat-card>
+  </div>
+  <div fxFlex="25%">
+    <mat-card>
+      <mat-card-title>Client View</mat-card-title>
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Location</mat-label>
+          <input matInput placeholder="Coordinates Location">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Destiny</mat-label>
+          <input matInput placeholder="Coordinates Destiny">
+        </mat-form-field>
+      </p>
+      <p>
+        <label> ecological
+          <input type="range" [ngModel]="customRide.options.ecological">
+        </label>
+      </p>
+      <p>
+        <label>time
+          <input type="range" min="0" max="1" step="0.1"  [ngModel]="customRide.options.time">
+        </label>
+      </p>
+      <p>
+        <label>comfort
+          <input type="range" min="0" max="1" step="0.1" [ngModel]="customRide.options.comfort">
+        </label>
+      </p>
+      <button mat-raised-button color="accent" (click)="this.getRoutes()">Order ride</button>
+    </mat-card>
+  </div>
+
+
+  <div fxFlex="50%">
+    <mat-card>
+      <div id="map" class="map"></div>
+    </mat-card>
+  </div>
+</div>

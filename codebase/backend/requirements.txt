@@ -1,0 +1,7 @@
+Flask>=1.0.0
+cloudant==2.13.0
+pandas
+sklearn
+matplotlib
+numpy
+flask_cors
