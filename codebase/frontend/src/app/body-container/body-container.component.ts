@@ -15,8 +15,8 @@ export class BodyContainerComponent implements OnInit {
   longitude: number = 48.7758459;
 
   vehicleCount = 2;
-  customRide: any = {
-    location: [],
+  customRide: Order = {
+    location: [0, 1],
     destiny: [],
     options: {
       ecological: 0.5,
@@ -68,7 +68,7 @@ export class BodyContainerComponent implements OnInit {
       source: vectorSource,
       style: new ol.style.Style({
         image: new ol.style.Circle({
-          radius: 4,
+          radius: 15,
           fill: new ol.style.Fill({color})
         })
       }),
@@ -97,7 +97,7 @@ export class BodyContainerComponent implements OnInit {
       source: vectorSource,
       style: new ol.style.Style({
         image: new ol.style.Circle({
-          radius: 10,
+          radius: 50,
           fill: new ol.style.Fill({color})
         })
       }),
@@ -109,19 +109,37 @@ export class BodyContainerComponent implements OnInit {
   }
 
   getRoutes(): void {
+    const alpha = 0.5;
     const colors = [
-      'red', 'purple', 'pink', 'green', 'yellow'
+      'rgb(255, 0, 0)', 'rgb(159, 40, 163)', 'rgb(0, 255, 0)', 'rgb(0, 0,255)', 'rgb(255, 255,0)', 'rgb(0, 255,255)'
     ];
+
+    const centroidsColor = [
+      `rgba(255, 0, 0, ${alpha})`, `rgba(159, 40, 163, ${alpha})`, `rgba(0, 255, 0, ${alpha})`, `rgba(0, 0,255, ${alpha})`, `rgba(255, 255,0, ${alpha})`, `rgba(0, 255,255, ${alpha})`
+    ];
+
 
     this.ordersService.getRoutes(this.vehicleCount).subscribe(
       x => {
         for (let i = 0; i < x.length; i++) {
           this.drawOrders(x[i].order, colors[i]);
-          this.drawCentroid(x[i].centroid, colors[i]); //        color: 'rgba(255, 255, 255, 0.5)'
+          this.drawCentroid(x[i].centroid, centroidsColor[i]); //        color: 'rgba(255, 255, 255, 0.5)'
 
         }
       }
     );
+  }
+
+  createOrder(): void {
+    const start = [9.1829321, 48.7758459];
+    const maxstep = 0.01;
+    this.customRide.location = [
+      start[0] + Math.random() * maxstep,
+      start[1] + Math.random() * maxstep,
+    ];
+    this.customRide.destiny = start;
+
+    this.ordersService.pushOrder(this.customRide);
   }
 
 

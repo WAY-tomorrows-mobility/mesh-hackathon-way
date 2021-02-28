@@ -8,6 +8,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class OrdersService {
   // url = 'http://localhost:8000/';
+
   url = 'https://' + window.location.host;
 
   constructor(private http: HttpClient) {
@@ -19,5 +20,20 @@ export class OrdersService {
 
   getRoutes(n: number): Observable<any> {
     return this.http.get(this.url + '/admin/' + n);
+  }
+
+  pushOrder(order: Order): void {
+    const body = {
+      order
+    };
+
+    console.log('Posting ');
+    const headers = {'content-type': 'application/json'};
+    this.http.post(this.url + '/api/order', body, {headers}).subscribe(
+      x => {
+        console.log('posted, ', x);
+        window.location.reload();
+      }
+    );
   }
 }

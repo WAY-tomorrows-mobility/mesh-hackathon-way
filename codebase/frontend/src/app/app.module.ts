@@ -15,6 +15,7 @@ import {FormsModule} from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {FlexModule} from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,19 +24,20 @@ import {MatCardModule} from '@angular/material/card';
     FooterComponent,
     BodyContainerComponent
   ],
-  imports: [
-    HttpClientModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    FormsModule,
-    MatToolbarModule,
-    FlexModule,
-    MatCardModule
-  ],
+    imports: [
+        HttpClientModule,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        FormsModule,
+        MatToolbarModule,
+        FlexModule,
+        MatCardModule,
+        MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

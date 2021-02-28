@@ -34,6 +34,12 @@ python hello.py
 
  View your app at: http://localhost:8000
 
+### 2.1 Only Run the data calulation
+It is possible to only run the data calulation process. It gathers example data and invokes the clustering algorithmen.
+Run only this routing process.
+  ```
+python admin_mock.py
+  ```
 ## 3. Prepare the app for deployment
 
 To deploy to IBM Cloud, it can be helpful to set up a manifest.yml file. One is provided for you with the sample. Take a moment to look at it.
