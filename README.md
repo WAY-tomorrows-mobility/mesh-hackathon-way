@@ -12,7 +12,8 @@ Way wird der erste Anbieter, der auf Basis der 5G Technologie und autonomen Fahr
 Die Beschreibung des Projektes sind auf die Unterpunkte aufgeteilt:
 ### Dokumentation
 Eine bessere Übersicht lässt sich in dem **Businessplan** finden.  
-Dieser ist hier zu finden: [BusinessplanWAY.pdf](https://github.com/WAY-tomorrows-mobility/mesh-hackathon-way/blob/main/documents/BusinessplanWAY.pdf) 
+Dieser ist hier zu finden: [BusinessplanWAY.pdf](https://github.com/WAY-tomorrows-mobility/mesh-hackathon-way/blob/main/documents/BusinessplanWAY.pdf)   
+Die **Pitchpräsentation** lässt sich hier finden: [Pitch_präsentation](https://github.com/WAY-tomorrows-mobility/mesh-hackathon-way/blob/main/documents/Pitch_pr%C3%A4sentation.pdf)
 
 ### Prototyp
 Für eine bessere Übersicht über die Interaktion zwischen dem Kunden mit unserer Business Idee haben wir eine App mithilfe von Adboe XD entworfen.  
