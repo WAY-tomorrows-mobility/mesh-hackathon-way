@@ -1,8 +1,10 @@
 # Prototype Architecture
 
-This codebase should demonstrate a simple implementation of the business idea.
+This codebase should demonstrate a simple abstraction and implementation of the business idea.  
+This prototype has been deployed and can be reached through this link:   
+https://getstartedpython-egregious-crane-ij.eu-gb.mybluemix.net/  
 It represents the abstracted and simplified idea of the grouping algorithms.
-It consists of two major parts: **the front and backend**
+It consists of two major parts: **the front- and backend**
 
 
 # Frontend
@@ -43,10 +45,7 @@ In case the result of the routing process has been returned, each of these point
 The backend is written in python and uses the [flask webserver framework](https://flask.palletsprojects.com/en/1.1.x/) and a instance of the ibm database [Cloudant](https://www.ibm.com/de-de/cloud/cloudant).
 
 The backend provides simple api functionality and also delivers the frontend.
-This backend contains configuration files to deployed the application to the IBM Cloud.
-
-The backend has been deployed and can be reached through this link: 
-https://getstartedpython-egregious-crane-ij.eu-gb.mybluemix.net/
+This backend contains configuration files to deploy the application to the IBM Cloud.
 
 ![asbtracted_component_diagram](../documents/pictures/minified_component.png)
 
@@ -58,4 +57,4 @@ The routing process can be started through the admin controller.
 
 For demonstration purposes it is possible to only look start the routing process.
 This will also use additional libraries to display the result in a graphical output.
-[How to start routing process](backend/README.md#-2.1-Only-Run-the-data-calulation)
+[How to start routing process](backend/README.md#21-only-run-the-data-calulation)
