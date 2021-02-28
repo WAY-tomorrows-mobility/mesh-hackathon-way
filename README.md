@@ -1,10 +1,15 @@
+<img src="./documents/pictures/Bild von iOS.png" alt="drawing" width="200"/> 
+
 # Titel der Solution
 WAY - tomorrow`s mobility
-# Slogan der Solution
-Slogan
-# Kurzbeschreibung der Solution und Präsentation mit den Schlüsselbotschaften
-Solution / Prototyp Link / Dokumentation / Beschreibung
 
+# Slogan der Solution
+Move your WAY.
+
+# Kurzbeschreibung der Solution und Präsentation mit den Schlüsselbotschaften
+Way wird der erste Anbieter, der auf Basis der 5G Technologie und autonomen Fahrzeugen einen effizienten ÖPNV gewährleistet. Basierend auf Angaben der Benutzer wird für jeden Kunden das entsprechende Fahrzeug angeboten.
+
+Die Beschreibung des Projektes sind auf die Unterpunkte aufeteilt:
 ### Dokumentation
 Eine bessere Übersicht lässt sich in dem **Businessplan** finden.  
 Dieser ist hier zu finden: [BusinessplanWAY.pdf](https://github.com/WAY-tomorrows-mobility/mesh-hackathon-way/blob/main/documents/BusinessplanWAY.pdf) 
